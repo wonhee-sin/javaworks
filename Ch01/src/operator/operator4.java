@@ -18,6 +18,7 @@ public class operator4 {
 		
 		ch = (fatherAge > motherAge) ? 't' : 'f' ;
 		System.out.println(ch);
+	
 	}
-
+	
 }
