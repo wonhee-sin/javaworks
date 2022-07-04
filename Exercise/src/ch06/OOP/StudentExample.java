@@ -1,4 +1,4 @@
-package ch06.OOP1;
+package ch06.OOP;
 
 public class StudentExample {
 
