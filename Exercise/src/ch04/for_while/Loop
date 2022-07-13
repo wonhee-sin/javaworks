@@ -30,3 +30,116 @@ for (; i <= 100; i++){...}
 for (int i=0, j=100; i<=50 && j>=50; i++, j--) {...}
 
 초기화식에서 선언된 변수는 for문 블록 내부에서 사용되는 로컬 변수이다. 따라서 for문을 벗어나서는 사용할 수 없다.
+
+for문 : for(초기화식; 조건식; 증감식){...} 을 말하며 조건식이 true가 될 때까지만 중괄호 내부를 반복한다. 반복할 때마다 증감식이 실행된다.
+	초기화식은 조건식과 증감식에서 사용할 루프 카운터 변수를 초기화한다. 주로 지정된 횟수만큼 반복할 때 사용한다.
+	
+while문 : while(조건식){...}을 말하며 조건식이 true가 될 때까지만 중괄호 내부를 반복실행한다.
+
+do-while문 : do{...} while(조건식);을 말하며 먼저 do 중괄호 내부를 실행하고 그다음 조건식이 true가 되면 다시 중괄호 내부를 반복 실행한다.
+
+break문: for문,while문,do-while문 내부에서 실행되면 반복을 취소한다.
+
+continue문 : for문, while문, do-while문 내부에서 실행되면 증감식 또는 조건식으로 돌아간다.
+
+
+Q1. 반복문의 종류를 빈 칸에 넣어보세요
+
+-반복문 : for문 while문 do-while문
+
+Q2. for문을 이용해서 1부터 100까지의 정수 중에서 3의 배수의 총 합을 구하는 코드를 작성해 보세요.
+
+
+int sum = 0;
+for (int i = 1; i <= 100; i++){
+	if (i%3 == 0){
+		sum +=i;
+		}
+	}
+System.out.println(sum);
+
+Q3. while문과 Math.random()메소드를 이용해서 2개의 주사위를 던졌을 때 나오는 눈을 (눈1,눈2) 형태로 출력하고, 눈의 합이 5가 아니면 계속 주사위를 던지고,
+	눈의 합이 5이면 실행을 멈추는 코드를 작성해 보세요.
+	
+	while(true) {
+		int num1 = (int)(Math.random()*6) + 1;
+		int num2 = (int)(Math.random()*6) + 1;
+		System.out.printf("(%d,%d)",num1,num2);
+		if((num1+num2) == 5) {
+				break;
+			}
+	}
+
+Q4. 중첩 for문을 이용하여 방정식 4x + 5y = 60의 모든 해를 구해서 x,y 형태로 출력해 보세요. 단,x와 y는 10 이하의 자연수 입니다.
+
+for (int x=1; x <= 10; x ++) {
+			for (int y =1; y<=10; y++) {
+				if( (4*x) + (5*y) == 60) {
+					System.out.println("(" + x + "," + y + ")");
+				}
+			}
+		}
+		
+Q5. for문을 이용해서 다음과 같이 *를 출력하는 코드를 작성해 보세요.
+
+for (int x=1; x <= 4; x ++) {
+			for(int y=1; y <=x; y++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+Q6. for문을 이용해서 다음과같이 *를 출력하는 코드를 작성해 보세요.	
+		
+		
+	for (int x=4; x >= 1; x--) {
+			for(int y=1; y <= 4; y++) {
+				if(y < x) {
+				System.out.print(" ");
+				}else {
+					System.out.print("*");
+				}
+			}
+			System.out.println();
+		}	
+		
+Q7. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
