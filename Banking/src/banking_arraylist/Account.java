@@ -1,4 +1,4 @@
-package banking;
+package banking_arraylist;
 
 //VO(Value Object)
 public class Account {
